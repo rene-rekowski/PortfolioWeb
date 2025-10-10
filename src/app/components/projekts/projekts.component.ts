@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 interface Project {
 	title: string;
@@ -9,16 +10,27 @@ interface Project {
 
 @Component({
   selector: 'app-projekts',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './projekts.component.html',
-  styleUrl: './projekts.component.css'
+  styleUrls: ['./projekts.component.css']
 })
 export class ProjektsComponent {
 	projects: Project[] = [
 		{
-			title: 'Portfilo Webseite',
-			de
-		}
+			title: 'Portfilo Website',
+			description: 'Showcase for my Projekts',
+			link: 'https://github.com/rene-rekowski/PortfolioWeb'
+		},
+		{
+			title: 'MemoryCatcher',
+			description: 'orgnaiz your Memorys',
+			link: 'https://github.com/rene-rekowski/MemoryCatcher',
+		},
+		{
+			title: 'LetsChat',
+			description: 'Chat in with other in same Network',
+			link: 'https://github.com/rene-rekowski/LetsChat',
+		},
 		];
 
 }

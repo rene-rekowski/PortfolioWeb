@@ -1,0 +1,13 @@
+#contact{
+	padding: 2rem;
+	background-Color: gray;
+	text-align: center;
+}
+#contact h1 {
+	padding: 2rem;
+	background-Color: gray;
+	text-align: left;
+}
+#contact p {
+	font-size: 1.2rem;
+}
