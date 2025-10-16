@@ -30,6 +30,11 @@ export class ProjektsComponent {
 			image: '/images/projects/LetsChatExample.png',
 		},
 		{
+			title: 'FXWriter',
+			description: 'Text-Prgram',
+			link: 'https://github.com/rene-rekowski/FXWriter',
+		},
+		{
 			title: 'Portfilo Website',
 			description: 'Showcase for my Projekts',
 			link: 'https://github.com/rene-rekowski/PortfolioWeb'

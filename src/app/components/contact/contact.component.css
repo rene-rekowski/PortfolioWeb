@@ -1,13 +1,41 @@
-#contact{
-	padding: 2rem;
-	background-Color: gray;
-	text-align: center;
+#contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: silver;
+  min-height: 300px;
+  gap: 2rem;
+  padding: 2rem;
 }
+
 #contact h1 {
-	padding: 2rem;
-	background-Color: gray;
-	text-align: left;
+  margin-bottom: 1rem;
 }
+
 #contact p {
-	font-size: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-buttons a {
+  display: inline-block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.social-buttons img {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+.social-buttons a:hover {
+  transform: scale(1.1);
 }
