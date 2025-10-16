@@ -49,3 +49,20 @@
   text-decoration: none;
   color: #007bff;
 }
+
+.github-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.github-button:hover {
+  transform: scale(1.1);
+}
+
+.github-icon {
+  width: 32px;
+  height: 32px;
+  filter: brightness(0) invert(0); /* schwarze Iconfarbe */
+}
