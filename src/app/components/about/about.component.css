@@ -1,13 +1,31 @@
-#about{
-	padding: 2rem;
-	background-Color: gray;
-	text-align: left;
-}
-#about h2 {
-	font-size: 2rem;
-	margin-bottom: 1rem:
+#about {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; 
+
+  background-color: gray;
+  min-height: 600px;
+  gap: 2rem;
 }
 
-#about p{
-	font-size: 1.2rem;
+.portrait-img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.about-text {
+  max-width: 600px;
+  padding: 2rem;
+}
+
+.about-text h2 {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-text p {
+  font-size: 2rem;
+  line-height: 1.5;
 }
