@@ -3,10 +3,16 @@
 
   <div class="timeline">
     <div class="education-item" *ngFor="let edu of education">
-      <span class="period">{{ edu.period }}</span>
-      <h3>{{ edu.title }}</h3>
-      <h4>{{ edu.institution }}</h4>
-      <p *ngIf="edu.description">{{ edu.description }}</p>
+      <img *ngIf="edu.image"
+           [src]="edu.image"
+           [alt]="edu.institution"
+           class="edu-image">
+      <div class="edu-content">
+        <span class="period">{{ edu.period }}</span>
+        <h3>{{ edu.title }}</h3>
+        <h4>{{ edu.institution }}</h4>
+        <p *ngIf="edu.description">{{ edu.description }}</p>
+      </div>
     </div>
   </div>
 </section>

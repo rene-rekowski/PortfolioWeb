@@ -7,29 +7,58 @@
 #education h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
+  color: black;
 }
 
+/* Timeline mittig auf der Seite */
 .timeline {
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
+  align-items: center; /* Timeline-Inhalt zentrieren */
+  gap: 2rem;
 }
 
+/* Education-Boxen */
 .education-item {
+  position: relative;
   background: white;
+  color: black;
   padding: 1rem 2rem;
   border: 2px solid gray;
   border-radius: 10px;
-  max-width: 600px;
-  width: 100%;
+  width: 600px; /* feste Breite, damit zentriert bleibt */
   text-align: left;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
 }
+
 .education-item:hover {
   transform: translateY(-5px);
 }
 
+/* Institution-Bild */
+.edu-image {
+  position: absolute;
+  left: -610px; /* immer gleich weit links vom Kasten */
+  top: 50%;
+  transform: translateY(-50%) scale(0.95);
+  width: 600px;
+  height: auto;
+  border-radius: 10px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  z-index: 2;
+}
+
+/* Bild erscheint beim Hover */
+.education-item:hover .edu-image {
+  opacity: 1;
+  transform: translateY(-50%) scale(1);
+}
+
+/* Textfarben */
 .period {
   font-weight: bold;
   color: gray;
@@ -46,5 +75,5 @@
 }
 
 .education-item p {
-  color: gray;
+  color: #333;
 }
