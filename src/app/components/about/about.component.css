@@ -1,6 +1,6 @@
 #about {
 	display: flex;
-	justify-content: space-between;
+
 	align-items: flex-end;
 	background-color: gray;
 	min-height: 600px;
@@ -12,6 +12,7 @@
 	height: 600px;
 	object-fit: cover;
 	border-radius: 10px;
+	padding-left: 150px;
 }
 
 
