@@ -18,7 +18,7 @@ interface EducationItem {
 export class EducationComponent {
   education: EducationItem[] = [
     {
-      period: '2022 - heute',
+      period: '2022 - 2025',
       title: 'Bachelor of Science – Informatik Technischer Systeme',
       institution: 'HAW Hamburg',
       description: 'Schwerpunkt auf Softwareentwicklung und eingebettete Systeme.'
@@ -28,6 +28,12 @@ export class EducationComponent {
       title: 'Staatlich anerkannter Erzieher',
       institution: 'Fröbelseminar Hamburg',
       description: 'Berufsbegleitende Ausbildung in der Nachmittagsbetreuung und Schulbegleitung.'
-    }
+    },
+    {
+	  period: '2003 - 2027',
+	  title: 'Irena-Sendler-Schule',
+	  institution: 'Stadtteilschule',
+	  description: 'allgemeine Fachhochschulreife'
+    },
   ];
 }
