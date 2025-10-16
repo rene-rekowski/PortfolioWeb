@@ -1,7 +1,15 @@
 import { Routes } from '@angular/router';
-import { ProjectShowcaseComponent } from './components/project-showcase/project-showcase.component'; 
+import { MainComponent } from './components/main/main.component';
+import { AboutComponent } from './components/about/about.component';
+import { ProjektsComponent } from './components/projekts/projekts.component';
+import { EducationComponent } from './components/education/education.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 export const routes: Routes = [
-	{ path: '', component: ProjectShowcaseComponent }, // Standardroute
-	 { path: 'project-showcase', component: ProjectShowcaseComponent }
+  { path: '', component: MainComponent }, // Standardroute
+  { path: 'about', component: AboutComponent },
+  { path: 'projects', component: ProjektsComponent },
+  { path: 'education', component: EducationComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: '**', redirectTo: '' } // fallback route
 ];

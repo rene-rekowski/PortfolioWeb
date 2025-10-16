@@ -26,6 +26,9 @@
   text-align: left;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
+.education-item:hover {
+  transform: translateY(-5px);
+}
 
 .period {
   font-weight: bold;

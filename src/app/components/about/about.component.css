@@ -25,7 +25,7 @@
 	margin-bottom: 0.5rem;
 }
 .about-text:hover h2{
-	transform: scale(1.02);  
+  transform: translateY(-5px); 
 }
 
 .about-text p {
