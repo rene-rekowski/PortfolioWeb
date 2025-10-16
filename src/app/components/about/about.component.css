@@ -1,31 +1,58 @@
 #about {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end; 
-
-  background-color: gray;
-  min-height: 600px;
-  gap: 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	background-color: gray;
+	min-height: 600px;
+	gap: 2rem;
 }
 
 .portrait-img {
-  width: 500px;
-  height: 500px;
-  object-fit: cover;
-  border-radius: 10px;
+	width: 500px;
+	height: 600px;
+	object-fit: cover;
+	border-radius: 10px;
 }
 
+
 .about-text {
-  max-width: 600px;
-  padding: 2rem;
+	max-width: 600px;
+	padding: 2rem;
 }
 
 .about-text h2 {
-  font-size: 4rem;
-  margin-bottom: 0.5rem;
+	font-size: 4rem;
+	margin-bottom: 0.5rem;
+}
+.about-text:hover h2{
+	transform: scale(1.02);  
 }
 
 .about-text p {
-  font-size: 2rem;
-  line-height: 1.5;
+	font-size: 2rem;
+	line-height: 1.5;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-buttons a {
+  display: inline-block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.social-buttons img {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+.social-buttons a:hover {
+  transform: scale(1.1);
 }
