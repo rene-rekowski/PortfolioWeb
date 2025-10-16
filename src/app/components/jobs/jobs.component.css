@@ -1,0 +1,50 @@
+#jobs {
+  padding: 2rem;
+  background-color: silver;
+  text-align: center;
+}
+
+#jobs h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.job-item {
+  background: white;
+  padding: 1rem 2rem;
+  border: 2px solid gray;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 100%;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+.job-item:hover {
+  transform: translateY(-5px);
+}
+
+.period {
+  font-weight: bold;
+  color: gray;
+}
+
+.job-item h3 {
+  margin: 0.5rem 0 0.2rem;
+  color: black;
+}
+
+.job-item h4 {
+  margin: 0;
+  color: black;
+}
+
+.job-item p {
+  color: gray;
+}

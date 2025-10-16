@@ -20,13 +20,13 @@ export class EducationComponent {
     {
       period: '2022 - 2025',
       title: 'Bachelor of Science – Informatik Technischer Systeme',
-      institution: 'HAW Hamburg',
+      institution: 'HAW - Hochschule für angewandte Wissenschaften Hamburg',
       description: 'Schwerpunkt auf Softwareentwicklung und eingebettete Systeme.'
     },
     {
       period: '2019 - 2022',
       title: 'Staatlich anerkannter Erzieher',
-      institution: 'Fröbelseminar Hamburg',
+      institution: 'BS30 - Fröbelseminar Hamburg',
       description: 'Berufsbegleitende Ausbildung in der Nachmittagsbetreuung und Schulbegleitung.'
     },
     {

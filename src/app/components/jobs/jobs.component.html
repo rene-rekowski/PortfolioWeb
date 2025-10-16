@@ -1,1 +1,12 @@
-<p>jobs works!</p>
+<section id="jobs">
+  <h2>Jobs</h2>
+
+  <div class="timeline">
+    <div class="job-item" *ngFor="let job of job">
+      <span class="period">{{ job.period }}</span>
+      <h3>{{ job.job }}</h3>
+      <h4>{{ job.institution }}</h4>
+      <p *ngIf="job.description">{{ job.description }}</p>
+    </div>
+  </div>
+</section>
