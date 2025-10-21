@@ -33,11 +33,13 @@ export class ProjektsComponent {
 			title: 'FXWriter',
 			description: 'Text-Prgram',
 			link: 'https://github.com/rene-rekowski/FXWriter',
+			image: '/images/projects/fxwriter-example.png'
 		},
 		{
 			title: 'Portfilo Website',
 			description: 'Showcase for my Projekts',
-			link: 'https://github.com/rene-rekowski/PortfolioWeb'
+			link: 'https://github.com/rene-rekowski/PortfolioWeb',
+			image: '/images/projects/portfoilo-example.png',
 		},
 	];
 	
