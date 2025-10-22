@@ -1,0 +1,19 @@
+.social-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-buttons a {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.social-buttons img {
+  width: 40px;
+  height: 40px;
+}
+
+.social-buttons a:hover {
+  transform: scale(1.1);
+}
