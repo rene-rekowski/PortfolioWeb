@@ -40,10 +40,10 @@
 /* Institution-Bild */
 .edu-image {
   position: absolute;
-  left: -610px; /* immer gleich weit links vom Kasten */
+  left: -550px; /* immer gleich weit links vom Kasten */
   top: 50%;
   transform: translateY(-50%) scale(0.95);
-  width: 600px;
+  width: 500px;
   height: auto;
   border-radius: 10px;
   opacity: 0;

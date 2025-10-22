@@ -19,7 +19,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 3rem; /* Abstand zwischen Text und Bild */
+	gap: 3rem; 
 	width: 100%;
 	max-width: 1000px;
 }
@@ -32,7 +32,7 @@
 }
 
 .frog img {
-	width: 500px;
+	width: 600px;
 	height: auto;
 	border-radius: 10px;
 	transition: transform 0.3s ease;
