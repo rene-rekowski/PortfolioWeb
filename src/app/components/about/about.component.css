@@ -2,13 +2,13 @@
 	display: flex;
 	align-items: flex-end;
 	background-color: gray;
-	min-height: 600px;
+	min-height: 900px;
 	gap: 2rem;
 }
 
 .portrait-img {
-	width: 500px;
-	height: 600px;
+	width: 800px;
+	height: auto;
 	object-fit: cover;
 	border-radius: 10px;
 	padding-left: 150px;

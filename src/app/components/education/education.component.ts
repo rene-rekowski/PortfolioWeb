@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RevealOnScrollDirective } from '../directives/reveal-on-scroll.directive';
 
 interface EducationItem {
   period: string;
@@ -12,7 +13,7 @@ interface EducationItem {
 @Component({
   selector: 'app-education',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RevealOnScrollDirective],
   templateUrl: './education.component.html',
   styleUrls: ['./education.component.css']
 })

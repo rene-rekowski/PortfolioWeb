@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RevealOnScrollDirective } from '../directives/reveal-on-scroll.directive';
 
 interface JobItem {
 	  period: string;
@@ -10,7 +11,7 @@ interface JobItem {
 
 @Component({
   selector: 'app-jobs',
-  imports: [CommonModule],
+  imports: [CommonModule, RevealOnScrollDirective],
   templateUrl: './jobs.component.html',
   styleUrl: './jobs.component.css'
 })
