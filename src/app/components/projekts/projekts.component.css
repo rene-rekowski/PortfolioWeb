@@ -18,7 +18,7 @@
 }
 
 .project-card {
-  background-color: white;
+  background-color: black;
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -37,11 +37,13 @@
 }
 
 .project-card h3 {
+color: white;
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
 }
 
 .project-card p {
+	color: gray;
   font-size: 1rem;
   margin-bottom: 0.5rem;
 }
@@ -65,5 +67,5 @@
 .github-icon {
   width: 32px;
   height: 32px;
-  filter: brightness(0) invert(0); /* schwarze Iconfarbe */
+  filter: brightness(0) invert(1);
 }

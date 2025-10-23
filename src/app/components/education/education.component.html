@@ -12,6 +12,9 @@
         <h3>{{ edu.title }}</h3>
         <h4>{{ edu.institution }}</h4>
         <p *ngIf="edu.description">{{ edu.description }}</p>
+        <button *ngIf="edu.pdf" class="pdf-button" (click)="openPDF(edu.pdf)">
+        	Diploma
+        </button>
       </div>
     </div>
   </div>

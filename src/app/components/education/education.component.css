@@ -1,79 +1,96 @@
 #education {
-  padding: 2rem;
-  background-color: gray;
-  text-align: center;
+	padding: 2rem;
+	background-color: gray;
+	text-align: center;
+	font-family: monospace;
 }
 
 #education h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: black;
+	font-size: 2rem;
+	margin-bottom: 2rem;
+	color: black;
 }
 
 /* Timeline mittig auf der Seite */
 .timeline {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Timeline-Inhalt zentrieren */
-  gap: 2rem;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* Timeline-Inhalt zentrieren */
+	gap: 2rem;
 }
 
 /* Education-Boxen */
 .education-item {
-  position: relative;
-  background: white;
-  color: black;
-  padding: 1rem 2rem;
-  border: 2px solid gray;
-  border-radius: 10px;
-  width: 600px; /* feste Breite, damit zentriert bleibt */
-  text-align: left;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s ease;
+	position: relative;
+	background: black;
+	color: white;
+	padding: 1rem 2rem;
+	border: 2px solid gray;
+	border-radius: 10px;
+	width: 600px;
+	text-align: left;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+	transition: transform 0.3s ease;
 }
 
 .education-item:hover {
-  transform: translateY(-5px);
+	transform: translateY(-5px);
 }
 
 /* Institution-Bild */
 .edu-image {
-  position: absolute;
-  left: -550px; /* immer gleich weit links vom Kasten */
-  top: 50%;
-  transform: translateY(-50%) scale(0.95);
-  width: 500px;
-  height: auto;
-  border-radius: 10px;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.4s ease, transform 0.4s ease;
-  z-index: 2;
+	position: absolute;
+	left: -550px; 
+	top: 50%;
+	transform: translateY(-50%) scale(0.95);
+	width: 500px;
+	height: auto;
+	border-radius: 10px;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.4s ease, transform 0.4s ease;
+	z-index: 2;
 }
 
-/* Bild erscheint beim Hover */
 .education-item:hover .edu-image {
-  opacity: 1;
-  transform: translateY(-50%) scale(1);
+	opacity: 1;
+	transform: translateY(-50%) scale(1);
 }
 
-/* Textfarben */
 .period {
-  font-weight: bold;
-  color: gray;
+	font-weight: bold;
+	color: white;
 }
 
 .education-item h3 {
-  margin: 0.5rem 0 0.2rem;
-  color: black;
+	margin: 0.5rem 0 0.2rem;
+	color: white;
 }
 
 .education-item h4 {
-  margin: 0;
-  color: black;
+	margin: 0;
+	color: white;
 }
 
 .education-item p {
-  color: #333;
+	color: gray;
+}
+
+.pdf-button {
+	align-content: right;
+	margin-top: 1rem;
+	padding: 0.5rem 1rem;
+	border: none;
+	border-radius: 6px;
+	background-color: gray;
+	color: white;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	font-weight: bold;
+	margin-top: 1rem;
+}
+
+.pdf-button:hover {
+	background-color: #0056b3;
 }

@@ -8,6 +8,7 @@ interface EducationItem {
   institution: string;
   description?: string;
   image: string;
+  pdf?: string;
 }
 
 @Component({
@@ -26,6 +27,7 @@ export class EducationComponent {
       institution: 'HAW - Hochschule für angewandte Wissenschaften Hamburg',
       description: 'Schwerpunkt auf Softwareentwicklung und eingebettete Systeme.',
       image: '/images/institution/haw.png',
+      pdf: '/pdf/diploma/haw-notenspiegel.pdf',
     },
     {
       period: '2019 - 2022',
@@ -42,4 +44,9 @@ export class EducationComponent {
 	  image: '/images/institution/irena-sendler-schule.png',
     },
   ];
+  
+  openPDF(pdfPath: string): void {
+	  window.open(pdfPath, '_blank');
+	}
+
 }

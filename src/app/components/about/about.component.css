@@ -14,12 +14,10 @@
 	padding-left: 150px;
 }
 
-
 .about-text {
 	max-width: 600px;
 	padding: 2rem;
 	font-family: monospace;
-
 }
 
 .about-text h2 {
@@ -30,4 +28,32 @@
 .about-text p {
 	font-size: 1.5rem;
 	line-height: 1.5;
+}
+
+/* ===========================
+   Tipp-Effekt ohne Cursor
+   =========================== */
+.typing-line {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+}
+
+/* 1. Zeile */
+.line1 {
+  animation: typing 3s steps(20, end) forwards;
+}
+
+/* 2. Zeile */
+.line2 {
+  animation: typing 3s steps(25, end) forwards;
+  animation-delay: 1s; /* beginnt nach der ersten Zeile */
+  animation-fill-mode: forwards;
+}
+
+/* Tipp-Animation */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
 }
