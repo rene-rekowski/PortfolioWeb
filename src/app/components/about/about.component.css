@@ -60,12 +60,13 @@
 
 @media (max-width: 768px) {
   #about {
+   width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    min-height: auto;
     gap: 1rem;
-    padding: 2rem;
   }
 
   .portrait-img {
