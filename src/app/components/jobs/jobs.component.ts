@@ -24,24 +24,24 @@ export class JobsComponent {
     	job: 'Datenerfasser',
     	institution: 'Signal Indua',
     	description: 'Teilzeit-Werkstudentenjob, Erfassung von Patienten Akten',
-    	image: '/images/institution/signal-iduna.png',
-    	reference: '/pdf/job-reference/arbeitszeugniss-signal-iduna.pdf',
+    	image: 'images/institution/signal-iduna.png',
+    	reference: 'pdf/job-reference/arbeitszeugniss-signal-iduna.pdf',
     },
     {
     	period: '2019 - 2022',
     	job: 'Erzieher',
     	institution: 'Grundschule Eberhofweg / Elbkinder',
     	description: 'Berufbegleitende Ausbildung. Teilzeit in Nachmittagsbetreung und Schulgebegleitung',
-    	image: '/images/institution/eberhof.png',
-    	reference: '/pdf/job-reference/arbeitszeugniss-elbkinder.pdf',
+    	image: 'images/institution/eberhof.png',
+    	reference: 'pdf/job-reference/arbeitszeugniss-elbkinder.pdf',
     },
     {
     	period: '2018 - 2019',
     	job: 'FSJ',
     	institution: 'IGL - Intressengemeinschaft Lentersweg',
     	description: 'Jugendhausarbeit',
-    	image: '/images/institution/igl.png',
-    	reference: '/pdf/job-reference/arbeitszeugniss-igl.pdf',
+    	image: 'images/institution/igl.png',
+    	reference: 'pdf/job-reference/arbeitszeugniss-igl.pdf',
     }
     
     

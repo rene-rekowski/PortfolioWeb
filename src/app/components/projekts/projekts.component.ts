@@ -22,25 +22,25 @@ export class ProjektsComponent {
 			title: 'MemoryCatcher',
 			description: 'orgnaiz your Memorys',
 			link: 'https://github.com/rene-rekowski/MemoryCatcher',
-			image: '/images/projects/MemoryCatcherExample.png',
+			image: 'images/projects/MemoryCatcherExample.png',
 		},
 		{
 			title: 'LetsChat',
 			description: 'Chat in with other in same Network',
 			link: 'https://github.com/rene-rekowski/LetsChat',
-			image: '/images/projects/LetsChatExample.png',
+			image: 'images/projects/LetsChatExample.png',
 		},
 		{
 			title: 'FXWriter',
 			description: 'Text-Prgram',
 			link: 'https://github.com/rene-rekowski/FXWriter',
-			image: '/images/projects/fxwriter-example.png'
+			image: 'images/projects/fxwriter-example.png'
 		},
 		{
 			title: 'Portfilo Website',
 			description: 'Showcase for my Projekts',
 			link: 'https://github.com/rene-rekowski/PortfolioWeb',
-			image: '/images/projects/portfoilo-example.png',
+			image: 'images/projects/portfoilo-example.png',
 		},
 	];
 	
