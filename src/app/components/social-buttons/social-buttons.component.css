@@ -17,3 +17,15 @@
 .social-buttons a:hover {
   transform: scale(1.1);
 }
+
+@media (max-width: 768px) {
+  .social-buttons {
+    justify-content: center;
+  }
+
+  .social-buttons img {
+    width: 32px;
+    height: 32px;
+  }
+}
+

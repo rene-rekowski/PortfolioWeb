@@ -86,3 +86,29 @@
 .pdf-button:hover {
 	background-color: white;
 }
+
+@media (max-width: 768px) {
+  .education-item, .job-item {
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+    box-shadow: none;
+  }
+
+  .edu-image, .job-image {
+    position: static;
+    width: 100%;
+    transform: none;
+    opacity: 1;
+    margin-bottom: 1rem;
+  }
+
+  .timeline {
+    gap: 1rem;
+  }
+
+  .pdf-button {
+    width: 100%;
+    text-align: center;
+  }
+}

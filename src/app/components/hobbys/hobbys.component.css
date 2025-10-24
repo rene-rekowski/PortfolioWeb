@@ -40,3 +40,24 @@
 .frog img:hover {
 	transform: scale(1.1);
 }
+@media (max-width: 768px) {
+  #hobbys {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .hobbys-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .frog img {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .hobby-text {
+    max-width: 90%;
+    font-size: 1rem;
+  }
+}

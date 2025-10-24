@@ -68,3 +68,29 @@ color: black;
   width: 32px;
   height: 32px;
 }
+
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .project-card {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .project-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-card p {
+    font-size: 0.9rem;
+  }
+
+  .github-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
