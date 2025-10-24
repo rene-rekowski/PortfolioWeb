@@ -23,7 +23,7 @@ export class EducationComponent {
   education: EducationItem[] = [
     {
       period: '2022 - 2025',
-      title: 'Bachelor of Science – Informatik Technischer Systeme',
+      title: 'Bachelor of Science – Informatik Technischer Systeme (abgebrochen)',
       institution: 'HAW - Hochschule für angewandte Wissenschaften Hamburg',
       description: 'Schwerpunkt auf Softwareentwicklung und eingebettete Systeme.',
       image: '/images/institution/haw.png',
@@ -35,6 +35,7 @@ export class EducationComponent {
       institution: 'BS30 - Fröbelseminar Hamburg',
       description: 'Berufsbegleitende Ausbildung in der Nachmittagsbetreuung und Schulbegleitung.',
       image: '/images/institution/bs30.png',
+      pdf: '/pdf/diploma/zeugniss-erzieher.pdf',
     },
     {
 	  period: '2003 - 2027',
@@ -42,6 +43,7 @@ export class EducationComponent {
 	  institution: 'Stadtteilschule',
 	  description: 'allgemeine Fachhochschulreife',
 	  image: '/images/institution/irena-sendler-schule.png',
+	  pdf: '/pdf/diploma/zeugniss-oberstufe.pdf'
     },
   ];
   

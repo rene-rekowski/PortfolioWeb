@@ -1,32 +1,31 @@
 #hobbys {
 	display: flex;
-	flex-direction: column; /* Überschrift oben, darunter der Inhalt */
-	align-items: center;    /* zentriert die Überschrift horizontal */
+	flex-direction: column; 
+	align-items: center; 
 	background-color: gray;
 	min-height: 600px;
 	padding: 2rem;
 	gap: 2rem;
+	font-family: monospace;
 }
 
 #hobbys h1 {
-	font-size: 3rem;
-	text-align: center;
+	font-size: 2rem;
+	margin-bottom: 2rem;
 	margin-bottom: 1rem;
-	font-family: monospace;
 }
 
 .hobbys-content {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 3rem; 
+	gap: 3rem;
 	width: 100%;
 	max-width: 1000px;
 }
 
 .hobby-text {
 	max-width: 500px;
-	font-family: monospace;
 	font-size: 1.5rem;
 	line-height: 1.5;
 }

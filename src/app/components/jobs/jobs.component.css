@@ -2,6 +2,7 @@
   padding: 2rem;
   background-color: silver;
   text-align: center;
+  font-family: monospace;
 }
 
 #jobs h2 {
@@ -17,9 +18,9 @@
 }
 
 .job-item {
-  background: white;
+  background: gray;
   padding: 1rem 2rem;
-  border: 2px solid gray;
+  border: 2px solid white;
   border-radius: 10px;
   max-width: 600px;
   width: 100%;
@@ -30,9 +31,28 @@
   transform: translateY(-5px);
 }
 
+/* Institution-Bild */
+.job-image {
+	position: absolute;
+	right: -550px; 
+	top: 50%;
+	transform: translateY(-50%) scale(0.95);
+	width: 500px;
+	height: auto;
+	border-radius: 10px;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.4s ease, transform 0.4s ease;
+	z-index: 2;
+}
+
+.job-item:hover .job-image {
+	opacity: 1;
+	transform: translateY(-50%) scale(1);
+}
 .period {
   font-weight: bold;
-  color: gray;
+  color: black;
 }
 
 .job-item h3 {
@@ -46,5 +66,23 @@
 }
 
 .job-item p {
-  color: gray;
+  color: black;
+}
+
+.pdf-button {
+	align-content: right;
+	margin-top: 1rem;
+	padding: 0.5rem 1rem;
+	border: none;
+	border-radius: 6px;
+	background-color: silver;
+	color: black;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	font-weight: bold;
+	margin-top: 1rem;
+}
+
+.pdf-button:hover {
+	background-color: white;
 }

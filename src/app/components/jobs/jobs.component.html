@@ -3,10 +3,19 @@
 
   <div class="timeline">
     <div class="job-item" *ngFor="let job of job">
+    <img *ngIf="job.image"
+    	 [src]="job.image"
+    	 [alt]="job.institution"
+    	 class="job-image">
+    <div class="job-content">
       <span class="period">{{ job.period }}</span>
       <h3>{{ job.job }}</h3>
       <h4>{{ job.institution }}</h4>
       <p *ngIf="job.description">{{ job.description }}</p>
+      <button *ngIf="job.reference" class="pdf-button" (click)="openPDF(job.reference)">
+      	Reference
+      </button>
+      </div>
     </div>
   </div>
 </section>

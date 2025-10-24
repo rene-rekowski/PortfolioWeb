@@ -23,7 +23,7 @@
 /* Education-Boxen */
 .education-item {
 	position: relative;
-	background: black;
+	background: silver;
 	color: white;
 	padding: 1rem 2rem;
 	border: 2px solid gray;
@@ -60,21 +60,21 @@
 
 .period {
 	font-weight: bold;
-	color: white;
+	color: black;
 }
 
 .education-item h3 {
 	margin: 0.5rem 0 0.2rem;
-	color: white;
+	color: black;
 }
 
 .education-item h4 {
 	margin: 0;
-	color: white;
+	color: black;
 }
 
 .education-item p {
-	color: gray;
+	color: black;
 }
 
 .pdf-button {
@@ -84,7 +84,7 @@
 	border: none;
 	border-radius: 6px;
 	background-color: gray;
-	color: white;
+	color: black;
 	cursor: pointer;
 	transition: background-color 0.3s ease;
 	font-weight: bold;
@@ -92,5 +92,5 @@
 }
 
 .pdf-button:hover {
-	background-color: #0056b3;
+	background-color: white;
 }
