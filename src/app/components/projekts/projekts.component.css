@@ -1,96 +1,85 @@
 #projects {
-  padding: 2rem;
-  background-color: silver;
-  text-align: center;
-  font-family: monospace;
+	padding: 2rem;
+	background-color: silver;
+	text-align: center;
+	font-family: monospace;
 }
 
 #projects h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+	font-size: 2rem;
+	margin-bottom: 1.5rem;
 }
 
 .project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  justify-items: center;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 1.5rem;
+	justify-items: center;
 }
 
 .project-card {
-  background-color: gray;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  text-align: left;
-  transition: transform 0.2s;
+	background-color: gray;
+	padding: 1rem;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	text-align: left;
+	transition: transform 0.2s;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
+	transform: translateY(-5px);
 }
 
 .project-card img {
-  width: 100%;
-  border-radius: 6px;
-  margin-bottom: 1rem;
+	width: 100%;
+	border-radius: 6px;
+	margin-bottom: 1rem;
 }
 
 .project-card h3 {
-color: black;
-  font-size: 1.3rem;
-  margin-bottom: 0.5rem;
+	color: black;
+	font-size: 2rem;
+	margin-bottom: 0.5rem;
 }
 
 .project-card p {
 	color: black;
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
 }
 
 .project-card a {
-  text-decoration: none;
-  color: #007bff;
+	text-decoration: none;
+	color: #007bff;
 }
 
 .github-button {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.3s ease;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	transition: transform 0.3s ease;
 }
 
 .github-button:hover {
-  transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .github-icon {
-  width: 32px;
-  height: 32px;
+	width: 64px;
+	height: 64px;
 }
 
-@media (max-width: 768px) {
-  .project-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  .project-card {
-    width: 100%;
-    padding: 0.5rem;
-  }
-
-  .project-card h3 {
-    font-size: 1.2rem;
-  }
-
-  .project-card p {
-    font-size: 0.9rem;
-  }
-
-  .github-icon {
-    width: 24px;
-    height: 24px;
-  }
+@media ( max-width : 768px) {
+	.project-grid {
+		grid-template-columns: 1fr;
+		gap: 1rem;
+	}
+	.project-card {
+		width: 100%;
+		padding: 0.5rem;
+	}
+	.github-icon {
+		width: 32px;
+		height: 32px;
+	}
 }
-

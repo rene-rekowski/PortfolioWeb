@@ -8,48 +8,59 @@
 #jobs h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
+  color: black;
 }
 
+/* Timeline Layout */
 .timeline {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
+/* Job-Boxen */
 .job-item {
+  position: relative;
   background: gray;
-  padding: 1rem 2rem;
+  color: black;
+  padding: 1.5rem 2rem;
   border: 2px solid white;
   border-radius: 10px;
-  max-width: 600px;
   width: 100%;
+  max-width: 1500px;
   text-align: left;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+  margin: 0 auto;
 }
+
 .job-item:hover {
   transform: translateY(-5px);
 }
 
 /* Institution-Bild */
 .job-image {
-	position: absolute;
-	right: -550px; 
-	top: 50%;
-	transform: translateY(-50%) scale(0.95);
-	width: 500px;
-	height: auto;
-	border-radius: 10px;
-	opacity: 0;
-	pointer-events: none;
-	transition: opacity 0.4s ease, transform 0.4s ease;
-	z-index: 2;
+  position: absolute;
+  right: -550px; 
+  top: 50%;
+  transform: translateY(-50%) scale(0.95);
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  z-index: 2;
 }
 
 .job-item:hover .job-image {
-	opacity: 1;
-	transform: translateY(-50%) scale(1);
+  opacity: 1;
+  transform: translateY(-50%) scale(1);
 }
+
+/* Textgestaltung */
 .period {
   font-weight: bold;
   color: black;
@@ -58,57 +69,72 @@
 .job-item h3 {
   margin: 0.5rem 0 0.2rem;
   color: black;
+  font-size: 1.6rem;
 }
 
 .job-item h4 {
   margin: 0;
   color: black;
+  font-size: 2.5rem;
 }
 
 .job-item p {
   color: black;
+  font-size: 1.5rem;
 }
 
+/* PDF-Button */
 .pdf-button {
-	align-content: right;
-	margin-top: 1rem;
-	padding: 0.5rem 1rem;
-	border: none;
-	border-radius: 6px;
-	background-color: silver;
-	color: black;
-	cursor: pointer;
-	transition: background-color 0.3s ease;
-	font-weight: bold;
-	margin-top: 1rem;
+  align-content: right;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: silver;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
 }
 
 .pdf-button:hover {
-	background-color: white;
+  background-color: white;
 }
 
+/* =============================
+   MOBILE ANSICHT
+   ============================= */
 @media (max-width: 768px) {
-  .education-item, .job-item {
-    width: 100%;
-    position: relative;
-    padding: 1rem;
+  .job-item {
+    width: 95%;
+    max-width: 500px;
+    padding: 1.5rem;
     box-shadow: none;
+    font-size: 1.1rem;
   }
 
-  .edu-image, .job-image {
+  .job-image {
     position: static;
-    width: 100%;
-    transform: none;
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto 1rem auto;
+    display: block;
     opacity: 1;
-    margin-bottom: 1rem;
+    transform: none;
+  }
+
+  .job-item:hover .job-image {
+    opacity: 1;
+    transform: translateY(-10%) scale(1);
   }
 
   .timeline {
-    gap: 1rem;
+    gap: 1.5rem;
   }
 
   .pdf-button {
     width: 100%;
     text-align: center;
+    font-size: 1rem;
   }
 }

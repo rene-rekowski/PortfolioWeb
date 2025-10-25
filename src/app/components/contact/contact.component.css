@@ -1,18 +1,29 @@
 #contact {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  background-color: silver;
-  min-height: 00px;
-  gap: 2rem;
-  padding: 2rem;
-  font-family: monospace;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	background-color: silver;
+	min-height: 00px;
+	gap: 2rem;
+	padding: 2rem;
+	font-family: monospace;
 }
 
 #contact h1 {
-  margin-bottom: 1rem;
+	margin-bottom: 1rem;
 }
 
 #contact p {
-  font-size: 1.2rem;
+	font-size: 1.2rem;
+}
+
+@media ( max-width : 768px) {
+	#contact {
+		flex-direction: column; /* alles untereinander */
+		justify-content: center; /* vertikal zentrieren */
+		align-items: center; /* horizontal zentrieren */
+		text-align: center;
+		gap: 1.5rem;
+		padding: 1.5rem;
+	}
 }
