@@ -111,6 +111,7 @@
     padding: 1.5rem;
     box-shadow: none;
     font-size: 1.1rem;
+    margin:0;
   }
 
   .job-image {
@@ -137,4 +138,13 @@
     text-align: center;
     font-size: 1rem;
   }
+  	.job-item h3 {
+		font-size: 1rem;
+	}
+	.job-item h4 {
+		font-size: 1rem;
+	}
+	.job-item p {
+		font-size: 0.7rem;
+	}
 }

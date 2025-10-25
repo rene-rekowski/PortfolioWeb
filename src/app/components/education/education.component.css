@@ -1,78 +1,79 @@
 #education {
-  padding: 2rem;
-  background-color: gray;
-  text-align: center;
-  font-family: monospace;
+	padding: 2rem;
+	background-color: gray;
+	text-align: center;
+	font-family: monospace;
 }
 
 #education h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: black;
+	font-size: 2rem;
+	margin-bottom: 2rem;
+	color: black;
 }
 
 .timeline {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
 }
 
 /* Education-Boxen */
 .education-item {
-  position: relative;
-  background: silver;
-  color: black;
-  padding: 1.5rem 2rem;
-  border: 2px solid gray;
-  border-radius: 10px;
-  width: 100%;           /* dynamische Breite */
-  max-width: 1500px;     /* Begrenzung auf großen Bildschirmen */
-  text-align: left;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s ease;
-  margin: 0 auto;       /* zentriert auf Desktop */
+	position: relative;
+	background: silver;
+	color: black;
+	padding: 1.5rem 2rem;
+	border: 2px solid gray;
+	border-radius: 10px;
+	width: 100%; /* dynamische Breite */
+	max-width: 1500px; /* Begrenzung auf großen Bildschirmen */
+	text-align: left;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+	transition: transform 0.3s ease;
+	margin: 0 auto; /* zentriert auf Desktop */
 }
+
 .education-itemh3 {
-  margin: 0.5rem 0 0.2rem;
-  color: black;
-  font-size: 1.6rem;
+	margin: 0.5rem 0 0.2rem;
+	color: black;
+	font-size: 1.6rem;
 }
 
 .education-item h4 {
-  margin: 0;
-  color: black;
-  font-size: 2.5rem;
+	margin: 0;
+	color: black;
+	font-size: 2.5rem;
 }
 
 .education-item p {
-  color: black;
-  font-size: 1.5rem;
+	color: black;
+	font-size: 1.5rem;
 }
 
 .education-item:hover {
-  transform: translateY(-5px);
+	transform: translateY(-5px);
 }
 
 /* Bilder */
 .edu-image {
-  position: absolute;
-  left: -550px; 
-  top: 50%;
-  transform: translateY(-50%) scale(0.95);
-  width: 500px;
-  height: auto;
-  border-radius: 10px;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.4s ease, transform 0.4s ease;
-  z-index: 2;
+	position: absolute;
+	left: -550px;
+	top: 50%;
+	transform: translateY(-50%) scale(0.95);
+	width: 500px;
+	height: auto;
+	border-radius: 10px;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.4s ease, transform 0.4s ease;
+	z-index: 2;
 }
 
 .education-item:hover .edu-image {
-  opacity: 1;
-  transform: translateY(-50%) scale(1);
+	opacity: 1;
+	transform: translateY(-50%) scale(1);
 }
 
 .pdf-button {
@@ -94,37 +95,44 @@
 }
 
 /* Mobile */
-@media (max-width: 768px) {
-  .education-item {
-    width: 95%;
-    max-width: 500px;
-    padding: 1.5rem;
-    box-shadow: none;
-    font-size: 1.1rem;
-  }
-
-  .edu-image {
-    position: static;
-    width: 90%;
-    max-width: 400px;
-    margin: 0 auto 1rem auto;
-    display: block;
-    opacity: 1;
-    transform: none;
-  }
-  
-  .education-item:hover .edu-image {
-  opacity: 1;
-  transform: translateY(-10%) scale(1);
-}
-
-  .timeline {
-    gap: 1.5rem;
-  }
-
-  .pdf-button {
-    width: 100%;
-    text-align: center;
-    font-size: 1rem;
-  }
+@media ( max-width : 768px) {
+	.education-item {
+		width: 95%;
+		max-width: 500px;
+		padding: 1.5rem;
+		box-shadow: none;
+		font-size: 1.1rem;
+		align-items: center;
+		margin:0;
+	}
+	.edu-image {
+		position: static;
+		width: 90%;
+		max-width: 400px;
+		margin: 0 auto 1rem auto;
+		display: block;
+		opacity: 1;
+		transform: none;
+	}
+	.education-item:hover .edu-image {
+		opacity: 1;
+		transform: translateY(-20%) scale(1);
+	}
+	.timeline {
+		gap: 1.5rem;
+	}
+	.pdf-button {
+		width: 100%;
+		text-align: center;
+		font-size: 1rem;
+	}
+	.education-item h3 {
+		font-size: 1rem;
+	}
+	.education-item h4 {
+		font-size: 1rem;
+	}
+	.education-item p {
+		font-size: 0.7rem;
+	}
 }
