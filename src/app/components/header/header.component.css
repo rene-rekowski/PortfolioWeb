@@ -8,6 +8,8 @@ header {
   z-index: 1000;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   font-family: monospace;
+	 font-size: 1.5rem;
+  padding: 1rem 0;
 }
 
 .navbar {
@@ -19,7 +21,7 @@ header {
 
 .logo {
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 2rem;
 }
 
 .nav-links {
@@ -41,9 +43,17 @@ header {
   color: #007bff;
 }
 
-/* tinyscreem */
 @media (max-width: 768px) {
+  header {
+    font-size: 1rem; 
+     padding:  0;
+  }
+
+  .logo {
+    font-size: 1.3rem; 
+  }
+
   .nav-links {
-    display: none;
+    display: none; 
   }
 }

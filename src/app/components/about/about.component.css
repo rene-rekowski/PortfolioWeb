@@ -11,7 +11,8 @@
 	height: auto;
 	object-fit: cover;
 	border-radius: 10px;
-	padding-left: 150px;
+	padding-left: 600px;
+	
 }
 
 .about-text {
@@ -30,9 +31,7 @@
 	line-height: 1.5;
 }
 
-/* ===========================
-   Tipp-Effekt ohne Cursor
-   =========================== */
+
 .typing-line {
   display: inline-block;
   overflow: hidden;
@@ -40,19 +39,16 @@
   width: 0;
 }
 
-/* 1. Zeile */
 .line1 {
   animation: typing 3s steps(20, end) forwards;
 }
 
-/* 2. Zeile */
 .line2 {
   animation: typing 3s steps(25, end) forwards;
-  animation-delay: 1s; /* beginnt nach der ersten Zeile */
+  animation-delay: 1s; 
   animation-fill-mode: forwards;
 }
 
-/* Tipp-Animation */
 @keyframes typing {
   from { width: 0; }
   to { width: 100%; }
@@ -67,7 +63,7 @@
     gap: 1rem;
     margin: 0;
   }
-   /* Zentrierte Social Buttons */
+  
   .about-text app-social-buttons,
   .social-buttons {
     display: flex;

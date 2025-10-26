@@ -20,10 +20,5 @@ export class SocialButtonsComponent {
       url: 'https://de.pinterest.com/renerekowski0335/',
       icon: 'images/icons/pinterest-icon.png'
     },
-    {
-      name: 'Instagram',
-      url: 'https://www.instagram.com/dein_profilname',
-      icon: 'images/icons/instagram-icon.png'
-    }
   ];
 }

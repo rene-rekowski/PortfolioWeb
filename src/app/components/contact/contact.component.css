@@ -19,9 +19,9 @@
 
 @media ( max-width : 768px) {
 	#contact {
-		flex-direction: column; /* alles untereinander */
-		justify-content: center; /* vertikal zentrieren */
-		align-items: center; /* horizontal zentrieren */
+		flex-direction: column; 
+		justify-content: center; 
+		align-items: center; 
 		text-align: center;
 		gap: 1.5rem;
 		padding: 1.5rem;

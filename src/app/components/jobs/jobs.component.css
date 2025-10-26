@@ -11,7 +11,6 @@
   color: black;
 }
 
-/* Timeline Layout */
 .timeline {
   position: relative;
   display: flex;
@@ -20,7 +19,6 @@
   gap: 2rem;
 }
 
-/* Job-Boxen */
 .job-item {
   position: relative;
   background: gray;
@@ -40,7 +38,6 @@
   transform: translateY(-5px);
 }
 
-/* Institution-Bild */
 .job-image {
   position: absolute;
   right: -550px; 
@@ -60,10 +57,10 @@
   transform: translateY(-50%) scale(1);
 }
 
-/* Textgestaltung */
 .period {
   font-weight: bold;
   color: black;
+  font-size: 1.2rem;
 }
 
 .job-item h3 {
@@ -83,27 +80,25 @@
   font-size: 1.5rem;
 }
 
-/* PDF-Button */
 .pdf-button {
-  align-content: right;
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 6px;
-  background-color: silver;
-  color: black;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-weight: bold;
+align-content: right;
+	margin-top: 1rem;
+	padding: 1.5rem 2.5rem;
+	border: none;
+	border-radius: 20px;
+	background-color: silver;
+	color: black;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	font-weight: bold;
+	margin-top: 1rem;
+	font-size: 1.1rem;
 }
 
 .pdf-button:hover {
   background-color: white;
 }
 
-/* =============================
-   MOBILE ANSICHT
-   ============================= */
 @media (max-width: 768px) {
   .job-item {
     width: 95%;
