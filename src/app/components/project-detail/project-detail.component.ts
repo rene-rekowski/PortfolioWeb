@@ -18,7 +18,7 @@ export class ProjectDetailComponent implements OnInit {
   projects = [
     {
       title: 'MemoryCatcher',
-      description: 'Organize your memories',
+      description: 'Organize and manage your personal memories with an intuitive interface.',
       features: ['Save and view memories with timestamps and categories',
                  'save person you know and add it in a event', 
                	],
@@ -33,7 +33,7 @@ export class ProjectDetailComponent implements OnInit {
     },
     {
       title: 'LetsChat',
-      description: 'Chat with others in the same network',
+      description: 'A local network chat application for seamless communication between multiple users.',
       features: ['Local network chat', 'Multi-user support'],
       frameworks: ['Java', 'Sockets', 'JavaFX'],
       images: [
@@ -44,7 +44,7 @@ export class ProjectDetailComponent implements OnInit {
     },
     {
         title: 'FXWriter',
-        description: 'Text editor',
+        description: 'A text editor for creating, editing, and saving text files, with options to encode or compress them.',
         features: ['load/save txt-file', 
                    'text-splitt in pages', 
                    'Codierung/Compression of strings (Caeser, LZW)'
@@ -58,7 +58,7 @@ export class ProjectDetailComponent implements OnInit {
       },
 	{
 		title: 'Portfilo Website',
-		description: 'Showcase for my Projekts',
+		description: 'My portfolio website showcasing my projects and CV.',
 		features: ['Responsive card-based project presentation', 
 		           'Navigation through multiple routed pages'],
 	    frameworks: ['JavaScript', 'Angular'],
