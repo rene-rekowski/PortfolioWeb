@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 import { RevealOnScrollDirective } from '../directives/reveal-on-scroll.directive';
 
 interface Project {
@@ -32,7 +33,7 @@ export class ProjektsComponent {
 		},
 		{
 			title: 'FXWriter',
-			description: 'Text-Prgram',
+			description: 'Text-Program',
 			link: 'https://github.com/rene-rekowski/FXWriter',
 			image: 'images/projects/fxwriter-example.png'
 		},
@@ -47,6 +48,11 @@ export class ProjektsComponent {
 	openLink(url: string): void {
 		  window.open(url, '_blank');
 		}
+	constructor(private router: Router) {}
+
+	viewDetails(title: string) {
+	  this.router.navigate(['/projects', title]);
+	}
 
 }
 

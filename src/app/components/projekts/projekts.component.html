@@ -2,16 +2,20 @@
 	<h2>MY PROJECTS</h2>
 	<div class="project-grid">
 		<div class="project-card" *ngFor="let project of projects">
-			<h3>{{ project.title }}</h3>
-			<img *ngIf="project.image" [alt]="project.title"
-				[src]="project.image">
-			<p>{{ project.description }}</p>
-
-			<button *ngIf="project.link" class="github-button"
-				(click)="openLink(project.link)">
-				<img src="images/icons/github-icon.png" alt="GitHub"
-					class="github-icon">
-			</button>
+			<div class="project-card-content">
+				<h3>{{ project.title }}</h3>
+				<img *ngIf="project.image" [alt]="project.title"
+					[src]="project.image">
+				<p>{{ project.description }}</p>
+			</div>
+			<div class="card-actions">
+				<button *ngIf="project.link" class="github-button"
+					(click)="openLink(project.link)">
+					<img src="images/icons/github-icon.png" alt="GitHub"
+						class="github-icon">
+				</button>
+				<button class="more-button" (click)="viewDetails(project.title)">More</button>
+			</div>
 		</div>
 	</div>
 </section>
