@@ -21,25 +21,25 @@ export class ProjektsComponent {
 	projects: Project[] = [
 		{
 			title: 'MemoryCatcher',
-			description: 'orgnaiz your Memorys',
+			description: 'Organize and manage your personal memories with an intuitive interface.',
 			link: 'https://github.com/rene-rekowski/MemoryCatcher',
 			image: 'images/projects/memory-catcher-example/memory-catcher-example-1.png',
 		},
 		{
 			title: 'LetsChat',
-			description: 'Chat in with other in same Network',
+			description: 'A local network chat application for seamless communication between multiple users.',
 			link: 'https://github.com/rene-rekowski/LetsChat',
-			image: 'images/projects/LetsChatExample.png',
+			image: 'images/projects/lets-chat-example/lets-chat-example-1.png',
 		},
 		{
 			title: 'FXWriter',
-			description: 'Text-Program',
+			description: 'A text editor for creating, editing, and saving text files, with options to encode or compress them.',
 			link: 'https://github.com/rene-rekowski/FXWriter',
-			image: 'images/projects/fxwriter-example.png'
+			image: 'images/projects/fx-writer-example/fx-writer-example-1.png',
 		},
 		{
 			title: 'Portfilo Website',
-			description: 'Showcase for my Projekts',
+			description: 'My portfolio website showcasing my projects and CV.',
 			link: 'https://github.com/rene-rekowski/PortfolioWeb',
 			image: 'images/projects/portfoilo-example.png',
 		},

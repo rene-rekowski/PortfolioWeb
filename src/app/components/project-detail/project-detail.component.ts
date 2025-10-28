@@ -19,7 +19,9 @@ export class ProjectDetailComponent implements OnInit {
     {
       title: 'MemoryCatcher',
       description: 'Organize your memories',
-      features: ['Save and view memories', 'Categorize entries', 'Simple UI'],
+      features: ['Save and view memories with timestamps and categories',
+                 'save person you know and add it in a event', 
+               	],
       frameworks: ['Java', 'JavaFX','SGLite'],
       images: [
               'images/projects/memory-catcher-example/memory-catcher-example-1.png',
@@ -43,7 +45,10 @@ export class ProjectDetailComponent implements OnInit {
     {
         title: 'FXWriter',
         description: 'Text editor',
-        features: ['load/save txt-file', 'text-splitt in pages', 'Codierung/Compression of strings'],
+        features: ['load/save txt-file', 
+                   'text-splitt in pages', 
+                   'Codierung/Compression of strings (Caeser, LZW)'
+                   ],
         frameworks: ['Java', 'JavaFX'],
         images: [
                 'images/projects/fx-writer-example/fx-writer-example-1.png',
@@ -54,7 +59,8 @@ export class ProjectDetailComponent implements OnInit {
 	{
 		title: 'Portfilo Website',
 		description: 'Showcase for my Projekts',
-		features: ['Card presention', 'routing pages'],
+		features: ['Responsive card-based project presentation', 
+		           'Navigation through multiple routed pages'],
 	    frameworks: ['JavaScript', 'Angular'],
 	    images: ['images/projects/portfoilo-example.png'],
 		link: 'https://github.com/rene-rekowski/PortfolioWeb',
