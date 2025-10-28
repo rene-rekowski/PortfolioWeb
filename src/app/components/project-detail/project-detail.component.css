@@ -112,3 +112,73 @@ button:hover {
 	width: 64px;
 	height: 64px;
 }
+
+@media (max-width: 430px) {
+  .title {
+    font-size: 2rem;
+    padding-top: 1rem;
+  }
+
+  .project-detail {
+    padding: 1rem;
+    min-height: auto;
+  }
+
+  .image-slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-direction: row; 
+  }
+
+  .slider-image {
+    width: 85vw;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .nav-button {
+    font-size: 1.2rem;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    background-color: gray;
+  }
+
+  .description-text {
+    font-size: 1rem;
+    padding: 0 0.5rem;
+  }
+
+  .detail-text {
+    padding: 1rem;
+    max-width: 95%;
+  }
+
+  .features-text h1, .framework-text h1 {
+    font-size: 1.3rem;
+  }
+
+  .features-text li, .framework-text li {
+    display: block;
+    font-size: 1rem;
+    margin: 0.3rem 0;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  button {
+    width: 100px;
+    height: 50px;
+    font-size: 1rem;
+  }
+
+  .github-button img {
+    width: 48px;
+    height: 48px;
+  }
+}
