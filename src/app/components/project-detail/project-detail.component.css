@@ -130,12 +130,15 @@ button:hover {
     justify-content: center;
     gap: 0.5rem;
     flex-direction: row; 
+    padding: 0;
+    margin:0;
   }
 
   .slider-image {
-    width: 85vw;
+    width: 60vw;
     height: auto;
     border-radius: 10px;
+    
   }
 
   .nav-button {
@@ -144,6 +147,9 @@ button:hover {
     height: 36px;
     padding: 0;
     background-color: gray;
+    padding: 0;
+    margin:0;
+    
   }
 
   .description-text {
