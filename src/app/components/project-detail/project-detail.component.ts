@@ -12,6 +12,8 @@ import { CommonModule } from '@angular/common';
 
 export class ProjectDetailComponent implements OnInit {
   project: any;
+  currentImageIndex = 0;
+  projectImages: string[] = [];
 
   projects = [
     {
@@ -19,7 +21,12 @@ export class ProjectDetailComponent implements OnInit {
       description: 'Organize your memories',
       features: ['Save and view memories', 'Categorize entries', 'Simple UI'],
       frameworks: ['Java', 'JavaFX','SGLite'],
-      image: 'images/projects/MemoryCatcherExample.png',
+      images: [
+              'images/projects/memory-catcher-example/memory-catcher-example-1.png',
+              'images/projects/memory-catcher-example/memory-catcher-example-2.png',
+              'images/projects/memory-catcher-example/memory-catcher-example-3.png',
+              'images/projects/memory-catcher-example/memory-catcher-example-4.png',
+             ],
       link: 'https://github.com/rene-rekowski/MemoryCatcher'
     },
     {
@@ -27,7 +34,10 @@ export class ProjectDetailComponent implements OnInit {
       description: 'Chat with others in the same network',
       features: ['Local network chat', 'Multi-user support'],
       frameworks: ['Java', 'Sockets', 'JavaFX'],
-      image: 'images/projects/LetsChatExample.png',
+      images: [
+              'images/projects/lets-chat-example/lets-chat-example-1.png',
+              'images/projects/lets-chat-example/lets-chat-example-2.png',
+              ],
       link: 'https://github.com/rene-rekowski/LetsChat'
     },
     {
@@ -35,7 +45,10 @@ export class ProjectDetailComponent implements OnInit {
         description: 'Text editor',
         features: ['load/save txt-file', 'text-splitt in pages', 'Codierung/Compression of strings'],
         frameworks: ['Java', 'JavaFX'],
-        image: 'images/projects/fxwriter-example.png',
+        images: [
+                'images/projects/fx-writer-example/fx-writer-example-1.png',
+                'images/projects/fx-writer-example/fx-writer-example-2.png',
+                ],
         link: 'https://github.com/rene-rekowski/FXWriter'
       },
 	{
@@ -43,8 +56,9 @@ export class ProjectDetailComponent implements OnInit {
 		description: 'Showcase for my Projekts',
 		features: ['Card presention', 'routing pages'],
 	    frameworks: ['JavaScript', 'Angular'],
+	    images: ['images/projects/portfoilo-example.png'],
 		link: 'https://github.com/rene-rekowski/PortfolioWeb',
-		image: 'images/projects/portfoilo-example.png',
+		
 	},
     
   ];
@@ -52,11 +66,29 @@ export class ProjectDetailComponent implements OnInit {
   constructor(private route: ActivatedRoute, private router: Router) {}
 
   ngOnInit(): void {
-    const title = this.route.snapshot.paramMap.get('title');
-    this.project = this.projects.find(p => p.title === title);
-  }
+	    const title = this.route.snapshot.paramMap.get('title');
+	    this.project = this.projects.find(p => p.title === title);
+	    if (this.project && this.project.images) {
+	      this.projectImages = this.project.images;
+	      this.currentImageIndex = 0;
+	    }
+	  }
 
   goBack(): void {
     this.router.navigate(['/']);
   }
+  
+  prevImage(): void {
+	    if (this.projectImages.length > 0) {
+	      this.currentImageIndex =
+	        (this.currentImageIndex - 1 + this.projectImages.length) % this.projectImages.length;
+	    }
+	  }
+
+	  nextImage(): void {
+	    if (this.projectImages.length > 0) {
+	      this.currentImageIndex =
+	        (this.currentImageIndex + 1) % this.projectImages.length;
+	    }
+	  }
 }

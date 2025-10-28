@@ -23,7 +23,7 @@ export class ProjektsComponent {
 			title: 'MemoryCatcher',
 			description: 'orgnaiz your Memorys',
 			link: 'https://github.com/rene-rekowski/MemoryCatcher',
-			image: 'images/projects/MemoryCatcherExample.png',
+			image: 'images/projects/memory-catcher-example/memory-catcher-example-1.png',
 		},
 		{
 			title: 'LetsChat',

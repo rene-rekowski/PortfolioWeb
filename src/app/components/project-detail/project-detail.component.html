@@ -1,33 +1,39 @@
 <div class="project-detail" *ngIf="project">
-	<h2 class="title">{{ project.title }}</h2>
-	<img [src]="project.image" [alt]="project.title" />
+  <h2 class="title">{{ project.title }}</h2>
 
-	<div class="detail-text">
-		<p class="description-text">{{ project.description }}</p>
+  <div class="image-slider-container">
+  <button class="nav-button left" (click)="prevImage()">&#10094;</button>
+  <img class="slider-image" [src]="projectImages[currentImageIndex]" [alt]="project.title" />
+  <button class="nav-button right" (click)="nextImage()">&#10095;</button>
+</div>
 
-		<div class="features-text">
-			<h1>Features:</h1>
-			<ul>
-				<li *ngFor="let f of project.features; let last = last">
-					{{ f }}<span *ngIf="!last">, </span>
-				</li>
-			</ul>
-		</div>
 
-		<div class="framework-text">
-			<h1>Frameworks:</h1>
-			<ul>
-				<li *ngFor="let fw of project.frameworks; let last = last">
-					{{ fw }}<span *ngIf="!last">, </span>
-				</li>
-			</ul>
-		</div>
-	</div>
+  <div class="detail-text">
+    <p class="description-text">{{ project.description }}</p>
 
-	<div class="action-buttons">
-		<button (click)="goBack()">Back</button>
-		<a class="github-button" *ngIf="project.link" [href]="project.link" target="_blank">
-			<img alt="Github" src="/images/icons/github-icon.png" />
-		</a>
-	</div>
+    <div class="features-text">
+      <h1>Features:</h1>
+      <ul>
+        <li *ngFor="let f of project.features; let last = last">
+          {{ f }}<span *ngIf="!last">, </span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="framework-text">
+      <h1>Frameworks:</h1>
+      <ul>
+        <li *ngFor="let fw of project.frameworks; let last = last">
+          {{ fw }}<span *ngIf="!last">, </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="action-buttons">
+    <button (click)="goBack()">Back</button>
+    <a class="github-button" *ngIf="project.link" [href]="project.link" target="_blank">
+      <img alt="Github" src="/images/icons/github-icon.png" />
+    </a>
+  </div>
 </div>
